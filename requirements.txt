@@ -1,0 +1,14 @@
+
+--index-url https://download.pytorch.org/whl/cu129
+gunicorn
+uvicorn
+ultralytics
+opencv-python
+torch
+torchvision
+python-dotenv
+openai
+fastapi[standard]
+supabase
+bcrypt==4.0.1
+passlib[bcrypt]
