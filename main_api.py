@@ -69,7 +69,7 @@ app = FastAPI(title="License Plate Recognition API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173","https://lrp-web.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -798,3 +798,4 @@ def export_events(
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error exporting events: {str(e)}")
+
